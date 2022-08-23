@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width initial-scale=1.0">
+   <!-- <link rel="stylesheet" href="../src/assets/css/main.css"> -->
+   <title>Leaderboard</title>
+<script defer src="index.js"></script></head>
+
+<body>
+   <div class="container">
+      <h1>Leaderboard</h1>
+      <div class="main-content">
+         <section class="table-section" id="table-section">
+            <div class="score-title">
+               <h2 class="title">Recent Scores</h2>
+               <button class="btn" type="button" name="refresh" id="refresh-btn">Refresh</button>
+            </div>
+            <div class="table-scroll">
+               <table class="score-table" id="score-table">
+                  <tr>
+                     <td class="data">Name: 100</td>
+                  </tr>
+                  <tr>
+                     <td class="data">Name: 20</td>
+                  </tr>
+                  <tr>
+                     <td class="data">Name: 50</td>
+                  </tr>
+                  <tr>
+                     <td class="data">Name: 80</td>
+                  </tr>
+                  <tr>
+                     <td class="data">Name: 125</td>
+                  </tr>
+                  <tr>
+                     <td class="data">Name: 77</td>
+                  </tr>
+                  <tr>
+                     <td class="data">Name: 42</td>
+                  </tr>
+                  <tr>
+                     <td class="data">Name: 90</td>
+                  </tr>
+               </table>
+            </div>
+         </section>
+         <form id="add-form" class="add-form">
+            <fieldset>
+               <legend>Add Your Score </legend>
+               <input type="text" name="title" id="title" placeholder="Your name" required>
+               <input type="text" name="author" id="author" placeholder="Your Score" required>
+               <div class="btn-container">
+                  <button class="btn" type="button" name="submit" id="submit-btn">Submit</button>
+               </div>
+            </fieldset>
+            <p class="success hidden" id="success"></p>
+         </form>
+      </div>
+      <footer class="copyright">
+         <p class="copyright-content">Copyright @ RB 2022</p>
+      </footer>
+   </div>
+   <script src="56eaff9a3b5a51c0c32d.js" type="module"></script>
+</body>
+
+</html>
