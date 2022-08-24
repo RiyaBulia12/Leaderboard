@@ -29,6 +29,10 @@ const refresh = () => {
    loadScore();
 };
 
+const removeMessage = () => {
+   successMsg.innerHTML = '';
+}
+
 const submitScore = () => {
    const postBody = {
       user: name.value,
@@ -38,7 +42,7 @@ const submitScore = () => {
 };
 
 const submit = () => {
-   if (isNaN(score.value)) {
+   if (Number.isNaN(Number(score.value))) {
       successMsg.innerHTML = 'Only digits allowed for score';
       successMsg.style.cssText = 'color:red;';
    } else if (name.value !== '' && score.value !== '') {
@@ -55,6 +59,9 @@ const submit = () => {
    successMsg.classList.remove('hidden');
 };
 
+
 loadScore();
 submitBtn.addEventListener('click', submit);
 refreshBtn.addEventListener('click', refresh);
+name.addEventListener('keydown', removeMessage);
+score.addEventListener('keydown', removeMessage);
