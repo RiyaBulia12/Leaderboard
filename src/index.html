@@ -12,47 +12,23 @@
    <div class="container">
       <h1>Leaderboard</h1>
       <div class="main-content">
-         <section class="table-section" id="table-section">
+         <section class="table-section" id="tableSection">
             <div class="score-title">
                <h2 class="title">Recent Scores</h2>
-               <button class="btn" type="button" name="refresh" id="refresh-btn">Refresh</button>
+               <button class="btn" type="button" name="refresh" id="refreshBtn">Refresh</button>
             </div>
             <div class="table-scroll">
-               <table class="score-table" id="score-table">
-                  <tr>
-                     <td class="data">Name: 100</td>
-                  </tr>
-                  <tr>
-                     <td class="data">Name: 20</td>
-                  </tr>
-                  <tr>
-                     <td class="data">Name: 50</td>
-                  </tr>
-                  <tr>
-                     <td class="data">Name: 80</td>
-                  </tr>
-                  <tr>
-                     <td class="data">Name: 125</td>
-                  </tr>
-                  <tr>
-                     <td class="data">Name: 77</td>
-                  </tr>
-                  <tr>
-                     <td class="data">Name: 42</td>
-                  </tr>
-                  <tr>
-                     <td class="data">Name: 90</td>
-                  </tr>
+               <table class="score-table" id="scoreTable">
                </table>
             </div>
          </section>
-         <form id="add-form" class="add-form">
+         <form id="addForm" class="add-form">
             <fieldset>
                <legend>Add Your Score </legend>
-               <input type="text" name="title" id="title" placeholder="Your name" required>
-               <input type="text" name="author" id="author" placeholder="Your Score" required>
+               <input type="text" name="name" id="name" placeholder="Your name" required>
+               <input type="text" name="score" id="score" placeholder="Your Score" required>
                <div class="btn-container">
-                  <button class="btn" type="button" name="submit" id="submit-btn">Submit</button>
+                  <button class="btn" type="button" name="submit" id="submitBtn">Submit</button>
                </div>
             </fieldset>
             <p class="success hidden" id="success"></p>
