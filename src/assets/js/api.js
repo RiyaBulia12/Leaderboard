@@ -1,8 +1,9 @@
-const baseUrl = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/90yo8SECzswGWAW8W1Yn/scores';
+const baseUrl = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/hRxMzll3VGcCmThlmus9/scores';
 
 export const getScores = async () => {
-  const response = await fetch(baseUrl).then((response) => response.json());
-  return response.result;
+  const response = await fetch(baseUrl);
+  const json = await response.json();
+  return json.result;
 };
 
 export const postScore = async (bodyData) => {

@@ -1,6 +1,7 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
 # Leaderboad
+The leaderboard website displays scores submitted by different players. It also allows you to submit your score.
 
 ## Built With
 - Package Manager: Node, NPM
@@ -30,7 +31,7 @@ npm install
 npm start
 ```
 
-## Authors
+## Author
 
 👤 **Riya Bulia**
 
@@ -50,3 +51,4 @@ Give a ⭐️ if you like this project!
 
 - [Setup Project  with Webpack](https://github.com/microverseinc/curriculum-javascript/blob/main/todo-list/exercises/exercise_set_up_project_with_webpack.md)
 - [Leaderboard template](https://github.com/microverseinc/curriculum-javascript/blob/main/leaderboard/sneak_peek.md)
+- [Generate Color Randomly](https://medium.com/@robin.nong/randomly-generate-pastel-colours-with-javascript-part-1-7fb3ea9bbb4f)
