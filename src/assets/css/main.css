@@ -15,8 +15,10 @@ body {
 .container {
   display: flex;
   flex-direction: column;
-  background-color: #ebeff6;
   height: 100vh;
+  background-image: url('../img/bg.png');
+  background-position: left 16%;
+  background-repeat: no-repeat;
 }
 
 h1 {
@@ -125,7 +127,8 @@ td {
 
 .btn:hover {
   color: white;
-  background-color: #ff8080;
+  background-color: #afa2dc;
+  transition: all 0.5s;
 }
 
 .btn-img:hover {
