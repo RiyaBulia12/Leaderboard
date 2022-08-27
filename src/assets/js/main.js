@@ -53,7 +53,7 @@ const submitScore = () => {
 const submit = () => {
   if (Number.isNaN(Number(score.value))) {
     successMsg.innerHTML = 'Only digits allowed for score';
-    successMsg.style.cssText = 'color:#f44336;';
+    successMsg.style.cssText = 'color:#cd5f85;';
   } else if (name.value !== '' && score.value !== '') {
     submitScore();
     successMsg.innerHTML = 'Scores successfully added';
@@ -63,7 +63,7 @@ const submit = () => {
     name.focus();
   } else {
     successMsg.innerHTML = 'Empty fields not allowed';
-    successMsg.style.cssText = 'color:#f44336;';
+    successMsg.style.cssText = 'color:#cd5f85;';
   }
   successMsg.classList.remove('hidden');
 };
